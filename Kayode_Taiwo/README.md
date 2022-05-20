@@ -32,7 +32,9 @@ It is the tracks returned by deep_sort that I now classify into teams by detecti
 
 Classifying into teams (blue or yellow) uses a KMeans clustering algorithm to detect the main colors and see if any is Blue or Yellow and save into appropriate folders. Some detections (images) from detectron2 contain a player from both teams. So KMeans will find both blue and yellow color and such detections are saved in the blue-yellow folder for now.
 
-Team classificatiopn is actually where a lot of the work on this requirement can be done as there can be many approaches to the problem of sorting players into teams. Here I use KMeans clustering to extract the main colors in each detected and tracked image and perform the classification according to the presence of the colors blue, yellow, or both being present! This is not the only way but rather one that I chose in order not to get bogged down on this task while there are other tasks to be done that have a finite completion time.
+Team classificatiopn is actually where a lot of the work on this requirement can be done as there can be many approaches to the problem of sorting players into teams. Here I use KMeans clustering to extract the main colors in each detected and tracked image and perform the classification according to the presence of the colors blue, yellow, or both!
+
+This is not the only way but rather one that I chose in order not to get bogged down on this task while there are other tasks to be done that have a finite completion time.
 
 Other approaches are to train a neural network to accept the entire image and return a team classification. Basically this part of the tasks can easily be infinite as there are many approaches that can be tried and compared. The one week allotted for this project will be insufficient.
 
