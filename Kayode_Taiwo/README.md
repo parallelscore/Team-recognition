@@ -9,3 +9,21 @@ This has to process all 751 frames in the provided 30 seconds video. So it runs 
 Then you can navigate to the folder ./data/output/blue, ./data/output/yellow, and ./data/output/blue-yellow, on the CLI.  
 
 Please NOTE that the above is a work in progress until the deadline for the test elapses. Thanks.
+
+I ran the person detection required to do this project with the Detectron2 package from Facebook: 
+
+https://github.com/facebookresearch/detectron2
+
+Detectron2 gives person detections across each frame of the input video.
+
+Next I deployed deep sort Tracking on the detections returned by Detectron2 to associate detections across frames. This is the problem of Multi Object Tracking (MOT).
+
+https://github.com/nwojke/deep_sort
+
+It is the tracks returned by deep_sort that I now classify into teams by detecting each teams colors in the image. The video features two teams - one wears a blue jersey, while the other team wears a yellow jersey.
+
+Classifying into teams (blue or yellow) uses a KMeans clustering algorithm to detect the main colors and see if any is Blue or Yellow and save into appropriate folders. Some detections (images) from detectron2 contain a player from both teams. So KMeans will find both blue and yellow color and such detections are saved in the blue-yellow folder for now.
+
+## Technical Note
+
+The way to use detectron2 is to create your project in the projects folder of a detectron2 repository. This is why you find deep_sort in the projects folder of the detectron2 repository here. That is how detectron2 recommends it be used as a library.
