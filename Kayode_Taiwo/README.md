@@ -8,7 +8,12 @@ $ docker run -it --name pscore geek0075/pscore:thu_may19_v1
 
 This has to process all 751 frames in the provided 30 seconds video. So it runs for a couple of hours. After it's run is over you can connect to it using the Docker Dashboard. Look under containers for pscore. Click on CLI. 
 
-Then you can navigate to the folder ./data/output/blue, ./data/output/yellow, and ./data/output/blue-yellow, on the CLI.  
+Then you can navigate to the folder ./data/output/blue, ./data/output/yellow, and ./data/output/blue-yellow, on the CLI. 
+
+or with the pscore container running you can copy the relevant files from the container to your local file system:
+
+$ cd ~detectron2/projects/deep_sort/
+$ docker cp pscore:/usr/src/app/detectron2/projects/deep_sort/data ./
 
 Please NOTE that the above is a work in progress until the deadline for the test elapses. Thanks.
 
