@@ -22,7 +22,7 @@ Detectron2 gives person detections across each frame of the input video.
 
 ## Person tracking with the deep sort algorithm
 
-Next I deployed deep sort Tracking on the detections returned by Detectron2 to associate detections across frames. This is the problem of Multi Object Tracking (MOT).
+Next I deployed deep sort Tracking on the detections returned by Detectron2 to associate detections across frames. This is the problem of Multi Object Tracking (MOT) as described and solved in this github repository.
 
 https://github.com/nwojke/deep_sort
 
