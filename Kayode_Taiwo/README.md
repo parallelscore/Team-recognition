@@ -13,6 +13,7 @@ Then you can navigate to the folder ./data/output/blue, ./data/output/yellow, an
 or with the pscore container running you can copy the relevant files from the container to your local file system:
 
 $ cd ~detectron2/projects/deep_sort/
+
 $ docker cp pscore:/usr/src/app/detectron2/projects/deep_sort/data ./
 
 Please NOTE that the above is a work in progress until the deadline for the test elapses. Thanks.
