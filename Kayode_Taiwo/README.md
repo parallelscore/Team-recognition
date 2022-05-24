@@ -68,9 +68,11 @@ So, it is a perfect color classifier based on the hues of Blue and Yellow it has
 Again after a bit of thought, it is more clear to me that the key here is clustering as against classification! And clustering applied to each image to cluster it with images of similar or close features. So while looking at the colors as above is OK, it is far superior to have clustered based on objects in each detected patch! This type of clustering is described here;
 
 Image Clustering Using k-Means
+
 https://towardsdatascience.com/image-clustering-using-k-means-4a78478d2b83
 
 k-means algorithm applied to image classification and processing
+
 https://www.unioviedo.es/compnum/labs/new/kmeans.html
 
 In a future experimentation that will be the way I would go. Not with classification via Neural networks (as there is a dearth of training data), but with clustering..
