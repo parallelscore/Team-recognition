@@ -65,6 +65,16 @@ The challenge with this approach is that it is a color classification rather tha
 
 So, it is a perfect color classifier based on the hues of Blue and Yellow it has been given to classify the person detections into. A next step is to make it a pure Team classifier and not merely a color classifier!
 
+Again after a bit of thought, it is more clear to me that the key here is clustering as against classification! And clustering applied to each image to cluster it with images of similar or close features. So while looking at the colors as above is OK, it is far superior to have clustered based on objects in each detected patch! This type of clustering is described here;
+
+Image Clustering Using k-Means
+https://towardsdatascience.com/image-clustering-using-k-means-4a78478d2b83
+
+k-means algorithm applied to image classification and processing
+https://www.unioviedo.es/compnum/labs/new/kmeans.html
+
+In a future experimentation that will be the way I would go. Not with classification via Neural networks (as there is a dearth of training data), but with clustering..
+
 ## Technical notes
 
 The way to use detectron2 is to create your project in the projects folder of a detectron2 repository. This is why you find deep_sort in the projects folder of the detectron2 repository here. That is how detectron2 recommends it be used as a library.
