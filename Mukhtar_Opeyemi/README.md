@@ -15,7 +15,7 @@ My approach follows the following proceedure:
     YOLO v5 have proven to be stable and successful in many deployed projects with decent performance. 
 3.  I implement a K-means clustering algorithm to separate the players from each team. 
     Other approaches like, bag of visual words, linear binary pattern, SIFT, OrB, SURF, etc. could be used to extract the color and texture feature
-    and SVM can be used to classify them. However, that would require a supervised training. Which is achievable but not an efficient approach,
+    and classifiers like SVM can be used for classification. However, that would require a supervised training. Which is achievable but not an efficient approach,
     since it requires labelling some portion of the data. K-means algorithm is a light weight unspervised training approach that performs well for the task. 
     I used 3 clusters to identify NAP team, BAR team and Others (like referees, linesman etc.).
     
