@@ -32,7 +32,9 @@ The script `src>video_analytics.py`. Takes in url from the drive as an optional 
 > docker run -it --rm -p  9696:9696 ride-duration-prediction-services
 
 
-On the repo out of the image is shown bellow.
+On the repo out of the image is shown below.
+`data>output>team`
+
 
 ## Improvement:
 * Annotating each team for better accuracy and traine with a pretrained model, but this will fail when inputting a new video with different team. This is the reason clustering was used in this work to handle issue.
