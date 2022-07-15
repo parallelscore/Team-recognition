@@ -11,9 +11,9 @@ Build a Docker file that takes the video from the link above and extracts (image
 
 * How do you differentiate each player?
 
-** Extract the **image representation** from each person detection using **resnet18** classification model. This runs the detected object on a model with the output of an hidden layer of vector size 512. This will try to detect colour in a player image.
-** Run the image representation on a simple **K-means** clustering algorithm. This will try to demarcate the image based on color which the feature extraction from the image have strong correlation.
-** The clustering will try to segment Team A, Team B and other humans(cameraman, referees, e.t.c) and save in different folder. The output is found in data>output>team <br>
+ * Extract the **image representation** from each person detection using **resnet18** classification model. This runs the detected object on a model with the output of an hidden layer of vector size 512. This will try to detect colour in a player image.
+ * Run the image representation on a simple **K-means** clustering algorithm. This will try to demarcate the image based on color which the feature extraction from the image have strong correlation.
+ * The clustering will try to segment Team A, Team B and other humans(cameraman, referees, e.t.c) and save in different folder. The output is found in data>output>team <br>
 
 ## How to run?
 
