@@ -22,7 +22,9 @@ My approach follows the following proceedure:
 4. As requested, a dockerfile has been create for the test. The dockerfile hosts all the required scripts and files for this task to be achieved.
    The dockerfile is hosted on docker hub and can be run with the following command.
    
-   ## docker run -t opeyemi2/parallel_score:finals 
+   ## docker build -t opeyemi2/parallel_score:p_score_updated ./
+   
+   ## docker run -t opeyemi2/parallel_score:p_score_updated
    
    The docker runs a bash script that install all the required dependencies and execute the python file.
 
